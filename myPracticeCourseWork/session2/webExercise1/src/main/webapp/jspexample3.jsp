@@ -37,17 +37,25 @@
         <h1>JSP Example 3: User list</h1>
 
         <h2>user table</h2>
+        <!-- use to loop through the list of user, pure java code --> 
         <% for (String user : users) {%>
         <table>
             <tr>
-                <%=user%>
+                <td>
+                    <!-- java code to print the user after every loop. --> 
+                    <%=user%>
+                </td>
+                <td>
+                    <!-- here in the first input the type is hidden not text -->
+                    <!-- the value is changed to the user name got from the loop -->
+                    <form action="./jspexample3.jsp" method="get">
+                    <input type="hidden" name="userName" value="<%=user%>">
+                    <input type="hidden" name="action" value="removeUser">
+                    <button type="submit" >remove name from list</button>
+                    </form> 
+                </td>
             </tr>
-            <tr> 
-                <form action="./jspexample3.jsp" method="get">
-                <input type="hidden" name="action" value="user">
-                <button type="submit" >remove name from list</button>
-                </form> 
-            </tr>
+
         </table>
         <%
             }
