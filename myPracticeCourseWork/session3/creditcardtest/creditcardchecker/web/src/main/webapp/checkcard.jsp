@@ -22,8 +22,12 @@
     </head>
     <body>
         <h1>Check Credit Card</h1>
-   
-        TODO CREATE A PAGE WHICH CHECKS CARD HERE
-
+        
+        <form action="checkcard.jsp" method="get">
+            <input type="text">
+            <button type="submit">Check Card</button>
+        </form>
+        <br>
+        <p></p>
     </body>
 </html>
