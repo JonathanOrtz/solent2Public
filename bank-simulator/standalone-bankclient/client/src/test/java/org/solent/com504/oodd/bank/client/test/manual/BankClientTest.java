@@ -24,8 +24,13 @@ public class BankClientTest {
 
     final static Logger LOG = LogManager.getLogger(BankClientTest.class);
 
+<<<<<<< HEAD
     String bankUrl = "http://com528bank.ukwest.cloudapp.azure.com:8080/bank/rest";
     //String bankUrl = "http://localhost:8080/bank/rest";
+=======
+    //String bankUrl = "http://com528bank.ukwest.cloudapp.azure.com:8080/bank/rest";
+    String bankUrl = "http://localhost:8080/bank/rest";
+>>>>>>> upstream/master
     CreditCard fromCard = null;
     CreditCard toCard = null;
     
